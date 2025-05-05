@@ -103,3 +103,76 @@
 
 })(jQuery);
 
+// {
+//     $(document).ready(function () {
+//         // On page load, apply saved active href
+//         const activeHref = localStorage.getItem('activeCountry');
+//         if (activeHref) {
+//           $('.country__bar_main a[href="' + activeHref + '"]').addClass('active');
+//         }
+    
+//         // On click, set active class and save to localStorage
+//         $('.country__bar_main a').on('click', function () {
+//           localStorage.setItem('activeCountry', $(this).attr('href'));
+//         });
+//       });
+// }
+
+// $(document).ready(function () {
+//     const $bar = $('.country__bar_main');
+
+//     // On page load, apply saved active href
+//     const activeHref = localStorage.getItem('activeCountry');
+//     if (activeHref) {
+//         const $activeLink = $bar.find('a[href="' + activeHref + '"]');
+//         $activeLink.addClass('active');
+//         scrollToCenter($activeLink);
+//     }
+
+//     // On click, set active class, save to localStorage and scroll to center
+//     $bar.on('click', 'a', function (e) {
+//         localStorage.setItem('activeCountry', $(this).attr('href'));
+//         scrollToCenter($(this));
+//     });
+
+//     // Function to scroll the clicked link into the horizontal center
+//     function scrollToCenter($el) {
+//         const elOffset = $el.position().left;
+//         const elWidth = $el.outerWidth(true);
+//         const containerWidth = $bar.width();
+//         const scrollLeft = $bar.scrollLeft();
+
+//         const newScrollLeft = scrollLeft + elOffset - (containerWidth / 2) + (elWidth / 2);
+//         $bar.animate({ scrollLeft: newScrollLeft }, 400); // smooth scroll
+//     }
+// });
+$(document).ready(function () {
+    const $bar = $('.country__bar_main');
+
+    // Get current page name (e.g., "/france-visa-detail.html")
+    const currentPage = window.location.pathname.split('/').pop().toLowerCase();
+
+    // Loop through each link to find a match
+    const $activeLink = $bar.find('a').filter(function () {
+        const linkHref = $(this).attr('href').split('/').pop().toLowerCase();
+        return linkHref === currentPage;
+    }).first();
+
+    // Apply active class and scroll to center
+    if ($activeLink.length) {
+        $activeLink.addClass('active');
+        scrollToCenter($activeLink);
+    }
+
+    // Scroll to center function
+    function scrollToCenter($el) {
+        const elOffset = $el.position().left;
+        const elWidth = $el.outerWidth(true);
+        const containerWidth = $bar.width();
+        const scrollLeft = $bar.scrollLeft();
+
+        const newScrollLeft = scrollLeft + elOffset - (containerWidth / 2) + (elWidth / 2);
+        $bar.animate({ scrollLeft: newScrollLeft }, 400);
+    }
+});
+

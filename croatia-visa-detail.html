@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Travisa - Visa & Immigration Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex">
+                        <a href="#" class="text-white me-4"><i class="fas fa-envelope text-secondary me-2"></i>Example@gmail.com</a>
+                        <a href="#" class="text-white me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>+01234567890</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal text-secondary"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal text-secondary"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal text-secondary"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal text-secondary"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle" href=""><i class="fab fa-youtube fw-normal text-secondary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a href="#" class="text-white me-2"> Help</a><small> / </small>
+                        <a href="#" class="text-white mx-2"> Support</a><small> / </small>
+                        <a href="#" class="text-white ms-2"> Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid nav-bar p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+                <a href="./index.html" class="navbar-brand p-0">
+                    <h2 class="display-5 text-secondary m-0"><img width="70"  src="img/main-logo.jpeg" class="img-fluid" alt=""></h2>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <!-- <a href="service.html" class="nav-item nav-link">Service</a> -->
+                        <div class="nav-item dropdown">
+                            <a href="./service.html" class="nav-link" data-bs-toggle="dropdown"><span class="dropdown-toggle">Service</span></a>
+                            <div class="dropdown-menu m-0">
+                              <a href="./services-detail-page.html" class="dropdown-item">Schengen Tourist Visa</a>
+                              <a href="./services-detail-page.html" class="dropdown-item">E-Visa</a>
+                              <a href="./services-detail-page.html" class="dropdown-item">UK visit Visa</a>
+                              <a href="./services-detail-page.html" class="dropdown-item">Canada Visit Visa</a>
+                              <a href="./services-detail-page.html" class="dropdown-item">USA B1/B2 Visa</a>
+                          </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <button class="btn btn-primary btn-md-square border-secondary mb-3 mb-md-3 mb-lg-0 me-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                    <a href="" class="btn btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0">Get A Quote</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-secondary mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+        <section class="country__selected_bar">
+            <div class="">
+                <div class="country__bar_main">
+                <a href="./austria-visa-detail.html">Austria</a>
+                <a href="./belgium-visa-detail.html">Belgium</a>
+                <a href="./croatia-visa-detail.html">Croatia</a>
+                <a href="./czech-republic-visa-detail.html">Czech Republic</a>
+                <a href="./denmark-visa-detail.html">Denmark</a>
+                <a href="./estonia-visa-detail.html">Estonia</a>
+                <a href="./finland-visa-detail.html">Finland</a>
+                <a href="./france-visa-detail.html">France</a>
+                <a href="./germany-visa-detail.html">Germany</a>
+                <a href="./greece-visa-detail.html">Greece</a>
+                <a href="./hungary-visa-detail.html">Hungary</a>
+                <a href="./iceland-visa-detail.html">Iceland</a>
+                <a href="./Italy-visa-detail.html">Italy</a>
+                <a href="./latvia-visa-detail.html">Latvia</a>
+                <a href="./liechtenstein-visa-detail.html">Liechtenstein</a>
+                <a href="./lithuania-visa-detail.html">Lithuania</a>
+                <a href="./luxembourg-visa-detail.html">Luxembourg</a>
+                <a href="./malta-visa-detail.html">Malta</a>
+                <a href="./netherlands-visa-detail.html">Netherlands</a>
+                <a href="./norway-visa-detail.html">Norway</a>
+                <a href="./poland-visa-detail.html">Poland</a>
+                <a href="./portugal-visa-detail.html">Portugal</a>
+                <a href="./slovakia-visa-detail.html">Slovakia</a>
+                <a href="./slovenia-visa-detail.html">Slovenia</a>
+                <a href="./spain-visa-detail.html">Spain</a>
+                <a href="./sweden-visa-detail.html">Sweden</a>
+                <a href="./switzerland-visa-detail.html">Switzerland</a>
+            </div>
+            </div>
+        </section>
+    
+        <!-- <div class="visa-section">
+            <div class="main-image">
+              <video autoplay muted loop playsinline>
+                <source src="./img/videos/Croatia-visa-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="text-overlay">Croatia Visa for Pakistani Citizens</div>
+            </div>
+            <div class="image-grid">
+              <img src="img/Croatia_1.jpg" alt="Croatia 1">
+              <img src="img/Croatia_2.jpg" alt="Croatia 2">
+              <img src="img/Croatia_3.jpg" alt="Croatia 3">
+              <img src="img/Croatia_4.jpg" alt="Croatia 4">
+            </div>
+          </div> -->
+          <div class="visa-section">
+            <div class="main-image">
+              <video autoplay muted loop playsinline>
+                <source src="./img/videos/Croatia-visa-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="text-overlay">Croatia Visa for Pakistani Citizens</div>
+            </div>
+            <div class="image-grid">
+              <img src="img/Croatia_1.jpg" alt="Belgium 1">
+              <img src="img/Croatia_2.jpg" alt="Belgium 2">
+              <img src="img/Croatia_3.jpg" alt="Belgium 3">
+              <img src="img/Croatia_4.jpg" alt="Belgium 4">
+            </div>
+          </div>
+        <!-- Header End -->
+        <div class="container-fluid service overflow-hidden">
+            <div class="container py-5">
+                <div class=" text-left mb-5 wow fadeInUp" data-wow-delay="0.1s" style="text-align: left;">
+                    <h2 class="display-6 mb-4">Croatia Visa for Pakistani Citizens</h2>
+                    <h4 class="border-heading">Croatia Visa Information</h4>
+                </div>
+                <div class="visa_info_main__wrapper">
+                    <div class="visa_info_main">
+                        <div class="visa_info_bx bx_1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M20.3544 10.6504C20.3544 16.0931 15.9422 20.5053 10.4995 20.5053C5.05673 20.5053 0.644531 16.0931 0.644531 10.6504C0.644531 5.20767 5.05673 0.795471 10.4995 0.795471C15.9422 0.795471 20.3544 5.20767 20.3544 10.6504Z" fill="#5057EA"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M9.84815 18.8745C9.84815 10.9371 14.7769 10.1512 18.7304 9.89173C18.7304 6.53995 15.0521 2.42578 10.5167 2.42578C5.98134 2.42578 2.30469 6.10243 2.30469 10.6378C2.30469 15.1732 5.42379 18.2712 9.84815 18.8745Z" fill="#E5EFFF"></path></svg>
+                        </div>
+                        <div>
+                            <p>Visa Type:</p>
+                            <span class="type-link" data-bs-title="Type A" data-bs-content="Type A Description...">Sticker</span>
+                        </div>
+                    
+                    </div>
+                    <div class="visa_info_main">
+                        <div class="visa_info_bx bx_2">
+                            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_37706_1950)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.74196 1.48832C7.74196 1.13018 7.45163 0.839844 7.09349 0.839844C6.73534 0.839844 6.44501 1.13018 6.44501 1.48832V1.75818C5.45464 1.82185 4.74683 1.96203 4.14118 2.27062C3.16503 2.76799 2.3714 3.56163 1.87403 4.53777C1.30859 5.6475 1.30859 7.10022 1.30859 10.0057V11.9944C1.30859 14.8998 1.30859 16.3525 1.87403 17.4623C2.3714 18.4384 3.16503 19.232 4.14118 19.7294C5.25091 20.2948 6.70363 20.2948 9.60906 20.2948H11.4327C14.3381 20.2948 15.7908 20.2948 16.9006 19.7294C17.8767 19.232 18.6703 18.4384 19.1677 17.4623C19.7332 16.3525 19.7332 14.8998 19.7332 11.9944V10.0057C19.7332 7.10022 19.7332 5.6475 19.1677 4.53777C18.6703 3.56163 17.8767 2.76799 16.9006 2.27062C16.2951 1.96212 15.5875 1.82194 14.5976 1.75824V1.48832C14.5976 1.13018 14.3073 0.839844 13.9491 0.839844C13.591 0.839844 13.3007 1.13018 13.3007 1.48832V1.71317C12.7524 1.70519 12.135 1.70519 11.4327 1.70519H9.60906C8.90712 1.70519 8.28997 1.70519 7.74196 1.71316V1.48832ZM5.15891 7.54145C5.15891 7.18331 5.44924 6.89298 5.80738 6.89298H15.2339C15.592 6.89298 15.8824 7.18331 15.8824 7.54145C15.8824 7.8996 15.592 8.18993 15.2339 8.18993H5.80738C5.44924 8.18993 5.15891 7.8996 5.15891 7.54145ZM5.58739 11.4323C5.58739 10.8409 6.06411 10.3515 6.66434 10.3515C7.26456 10.3515 7.74129 10.8409 7.74129 11.4323C7.74129 12.0238 7.26456 12.5131 6.66434 12.5131C6.06411 12.5131 5.58739 12.0238 5.58739 11.4323ZM9.44369 11.4323C9.44369 10.8409 9.92042 10.3515 10.5206 10.3515C11.1209 10.3515 11.5976 10.8409 11.5976 11.4323C11.5976 12.0238 11.1209 12.5131 10.5206 12.5131C9.92042 12.5131 9.44369 12.0238 9.44369 11.4323ZM13.3 11.4323C13.3 10.8409 13.7767 10.3515 14.3769 10.3515C14.9772 10.3515 15.4539 10.8409 15.4539 11.4323C15.4539 12.0238 14.9772 12.5131 14.3769 12.5131C13.7767 12.5131 13.3 12.0238 13.3 11.4323ZM5.58739 14.8909C5.58739 14.2994 6.06411 13.8101 6.66434 13.8101C7.26456 13.8101 7.74129 14.2994 7.74129 14.8909C7.74129 15.4823 7.26456 15.9716 6.66434 15.9716C6.06411 15.9716 5.58739 15.4823 5.58739 14.8909ZM9.44369 14.8909C9.44369 14.2994 9.92042 13.8101 10.5206 13.8101C11.1209 13.8101 11.5976 14.2994 11.5976 14.8909C11.5976 15.4823 11.1209 15.9716 10.5206 15.9716C9.92042 15.9716 9.44369 15.4823 9.44369 14.8909ZM13.3 14.8909C13.3 14.2994 13.7767 13.8101 14.3769 13.8101C14.9772 13.8101 15.4539 14.2994 15.4539 14.8909C15.4539 15.4823 14.9772 15.9716 14.3769 15.9716C13.7767 15.9716 13.3 15.4823 13.3 14.8909Z" fill="#009DFF"></path></g><defs><clipPath id="clip0_37706_1950"><rect width="20.5669" height="20.7512" fill="white" transform="translate(0.236328 0.625)"></rect></clipPath></defs></svg>
+                        </div>   
+                        <div>
+                            <p>Length of Stay:</p> 
+                            <span class="type-link" 
+                                data-bs-toggle="popover"
+                                data-bs-title="Length of Stay" 
+                                data-bs-html="true"
+                                data-bs-content="<ul><li>Tourist Visa</li><li>Business Visa</li><li>Family Visit</li></ul>">
+                                    upto 90 Days
+                            </span>
+                        </div>
+                    </div>
+                    <div class="visa_info_main">
+                        <div class="visa_info_bx bx_3">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_39491_51042)"><path d="M8.37565 1.58012C8.37565 1.22197 8.6634 0.931641 9.01836 0.931641H12.4462C12.8012 0.931641 13.0889 1.22197 13.0889 1.58012C13.0889 1.93826 12.8012 2.22859 12.4462 2.22859H9.01836C8.6634 2.22859 8.37565 1.93826 8.37565 1.58012Z" fill="#12B76A"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7323 3.52555C6.11776 3.52555 2.37695 7.29987 2.37695 11.9557C2.37695 16.6116 6.11776 20.3859 10.7323 20.3859C15.3468 20.3859 19.0876 16.6116 19.0876 11.9557C19.0876 9.86148 18.33 7.94474 17.0774 6.4708L18.4709 5.06488C18.7219 4.81164 18.7219 4.40104 18.4709 4.1478C18.2199 3.89455 17.8129 3.89455 17.5619 4.1478L16.1685 5.55372C14.7077 4.2899 12.8079 3.52555 10.7323 3.52555ZM11.375 9.36183C11.375 9.00369 11.0872 8.71336 10.7323 8.71336C10.3773 8.71336 10.0896 9.00369 10.0896 9.36183V12.8204C10.0896 13.1785 10.3773 13.4689 10.7323 13.4689C11.0872 13.4689 11.375 13.1785 11.375 12.8204V9.36183Z" fill="#12B76A"></path></g><defs><clipPath id="clip0_39491_51042"><rect width="20.5669" height="20.7512" fill="white" transform="translate(0.449219 0.714844)"></rect></clipPath></defs></svg>
+                        </div>
+                        <div>
+                            <p>Type:</p>
+                            <span class="type-link" data-bs-title="Type" data-bs-content="A Type C Schengen Visa is a short-stay visa for visits up to 90 days within a 180-day period in the Schengen Area.">Type C</span>
+                        </div>
+                    </div>
+                    <div class="visa_info_main">
+                        <div class="visa_info_bx bx_4">
+                            <svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.42191" y="1.37699" width="16.1934" height="21.2441" rx="2.81006" fill="#2B00FF" stroke="#E2E3FB" stroke-width="1.29695"></rect><path d="M13.2852 10.8789V12.8085" stroke="#E2E3FB" stroke-width="1.29695" stroke-linecap="round"></path></svg>
+                        </div>
+                        <div>
+                            <p>Entry:</p>
+                            <span class="type-link" data-bs-title="Number of Entries" data-bs-content="Permits unlimited entries and exits within the visa's validity period.">Multiple</span>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="timeline-container_sec">
+                    <h2 class="section-title">How Croatia Visa Process Works</h2>
+                  
+                    <div class="timeline-container" id="timeline">
+                      <div class="timeline-line">
+                        <div class="timeline-line-fill" id="timeline-line-fill"></div>
+                      </div>
+                  
+                      <div class="timeline-step">
+                        <div class="timeline-dot"></div>
+                        <h5>Upload your documents on Atlys</h5>
+                        <p>Atlys' system will verify your documents</p>
+                      </div>
+                  
+                      <div class="timeline-step">
+                        <div class="timeline-dot"></div>
+                        <h5>We connect you with a concierge</h5>
+                        <p>Former consulate officers or VFS experts</p>
+                      </div>
+                  
+                      <div class="timeline-step">
+                        <div class="timeline-dot"></div>
+                        <h5>Get personalized guidance</h5>
+                        <p>Our concierge is with you every step of the way</p>
+                      </div>
+                  
+                      <div class="timeline-step">
+                        <div class="timeline-dot"></div>
+                        <h5>Visit your visa appointment</h5>
+                        <p>Submit all gathered documents</p>
+                      </div>
+                  
+                      <div class="timeline-step">
+                        <div class="timeline-dot"></div>
+                        <h5>Get your visa approved!</h5>
+                        <p>Once approved, you’re eligible to travel to any country in the Schengen Union!</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="visa_rejection_reason">
+                    <div class=" text-left mb-5 wow fadeInUp" data-wow-delay="0.1s" style="text-align: left;">
+                        <h4 class="border-heading">Croatia Visa Rejection Reasons</h4>
+                        <p class="mt-4">Factors that can get your visa rejected</p>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="visa_rejection_fld">
+                            <div>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_40593_6594)"><path d="M15.9581 5.98679C14.5624 5.61378 13.0932 5.61378 11.6975 5.98679H11.6326C9.77657 6.46698 8.13259 7.55011 6.95894 9.06605C5.78528 10.582 5.14844 12.4448 5.14844 14.362C5.14844 16.2792 5.78528 18.142 6.95894 19.658C8.13259 21.1739 9.77657 22.2571 11.6326 22.7372H11.73C12.4055 22.9066 13.099 22.9937 13.7954 22.9968C14.5247 22.9968 15.2512 22.906 15.9581 22.7264C17.8094 22.2426 19.4481 21.1586 20.6176 19.6441C21.7871 18.1296 22.4215 16.2701 22.4215 14.3566C22.4215 12.4431 21.7871 10.5836 20.6176 9.06914C19.4481 7.55465 17.8094 6.47065 15.9581 5.98679ZM20.1971 13.2644H18.1209C17.933 11.5209 17.3284 9.84821 16.3582 8.38743C17.3546 8.81487 18.228 9.48518 18.8986 10.3371C19.5692 11.1891 20.0157 12.1955 20.1971 13.2644ZM13.7954 20.0446C12.6487 18.752 11.921 17.142 11.7083 15.4272H15.8824C15.6632 17.1401 14.9363 18.7483 13.7954 20.0446ZM11.7083 13.2644C11.9255 11.5477 12.6525 9.93545 13.7954 8.63615C14.9383 9.93545 15.6653 11.5477 15.8824 13.2644H11.7083ZM11.2866 8.38743C10.3164 9.84821 9.71186 11.5209 9.52395 13.2644H7.36121C7.55099 12.1864 8.01043 11.1739 8.69677 10.3212C9.3831 9.46845 10.274 8.80323 11.2866 8.38743ZM7.39365 15.4272H9.55639C9.74121 17.1764 10.35 18.8542 11.3298 20.315C10.3139 19.8997 9.41988 19.2335 8.73148 18.3786C8.04308 17.5238 7.58278 16.5083 7.39365 15.4272ZM16.2933 20.3258C17.289 18.8644 17.916 17.1836 18.1209 15.4272H20.2836C20.091 16.516 19.6234 17.5376 18.925 18.395C18.2267 19.2523 17.3208 19.917 16.2933 20.3258Z" fill="#2864A3"></path><path d="M19.9669 27.0055C19.7641 27.2083 19.489 27.3223 19.2022 27.3223H8.38851C8.10171 27.3223 7.82666 27.2083 7.62386 27.0055C7.42107 26.8027 7.30714 26.5277 7.30714 26.2409C7.30714 25.9541 7.42107 25.679 7.62386 25.4762C7.82666 25.2734 8.10171 25.1595 8.38851 25.1595H19.2022C19.489 25.1595 19.7641 25.2734 19.9669 25.4762M15.9581 5.98679C14.5624 5.61378 13.0932 5.61378 11.6975 5.98679H11.6326C9.77657 6.46698 8.13259 7.55011 6.95894 9.06605C5.78528 10.582 5.14844 12.4448 5.14844 14.362C5.14844 16.2792 5.78528 18.142 6.95894 19.658C8.13259 21.1739 9.77657 22.2571 11.6326 22.7372H11.73C12.4055 22.9066 13.099 22.9937 13.7954 22.9968C14.5247 22.9968 15.2512 22.906 15.9581 22.7264C17.8094 22.2426 19.4481 21.1586 20.6176 19.6441C21.7871 18.1296 22.4215 16.2701 22.4215 14.3566C22.4215 12.4431 21.7871 10.5836 20.6176 9.06914C19.4481 7.55465 17.8094 6.47065 15.9581 5.98679ZM20.1971 13.2644H18.1209C17.933 11.5209 17.3284 9.84821 16.3582 8.38743C17.3546 8.81487 18.228 9.48518 18.8986 10.3371C19.5692 11.1891 20.0157 12.1955 20.1971 13.2644ZM13.7954 20.0446C12.6487 18.752 11.921 17.142 11.7083 15.4272H15.8824C15.6632 17.1401 14.9363 18.7483 13.7954 20.0446ZM11.7083 13.2644C11.9255 11.5477 12.6525 9.93545 13.7954 8.63615C14.9383 9.93545 15.6653 11.5477 15.8824 13.2644H11.7083ZM11.2866 8.38743C10.3164 9.84821 9.71186 11.5209 9.52395 13.2644H7.36121C7.55099 12.1864 8.01043 11.1739 8.69677 10.3212C9.3831 9.46845 10.274 8.80323 11.2866 8.38743ZM7.39365 15.4272H9.55639C9.74121 17.1764 10.35 18.8542 11.3298 20.315C10.3139 19.8997 9.41988 19.2335 8.73148 18.3786C8.04308 17.5238 7.58278 16.5083 7.39365 15.4272ZM16.2933 20.3258C17.289 18.8644 17.916 17.1836 18.1209 15.4272H20.2836C20.091 16.516 19.6234 17.5376 18.925 18.395C18.2267 19.2523 17.3208 19.917 16.2933 20.3258Z" stroke="white" stroke-width="0.7"></path></g><path d="M4.24609 5.69336L23.0133 24.4606" stroke="#2864A3" stroke-width="2"></path><circle cx="13.7845" cy="14.2571" r="12.9446" stroke="#2864A3" stroke-width="1.5"></circle><defs><clipPath id="clip0_40593_6594"><rect width="18" height="18" fill="white" transform="translate(4.78516 5.25781)"></rect></clipPath></defs></svg>
+                            </div>
+                            <div>
+                                <h2>Expired Passport</h2>
+                                <p>Applying with a passport that has expired or expires within 6 months</p>
+                            </div>
+                        </div>
+                        <div class="visa_rejection_fld">
+                            <div>
+                                <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.2423 9.48431H8.64642M22.5409 9.48431H12.9198M2.23633 3.07422L4.06974 4.90763M23.6033 24.4412L21.7699 22.6078M21.7699 22.6078C21.6109 22.7184 21.444 22.8184 21.27 22.9071C20.3559 23.3729 19.1592 23.3729 16.7659 23.3729H9.07376C6.68044 23.3729 5.48377 23.3729 4.56964 22.9071C3.76555 22.4974 3.11181 21.8436 2.7021 21.0395C2.23633 20.1254 2.23633 18.9287 2.23633 16.5354V10.98C2.23633 8.58668 2.23633 7.39001 2.7021 6.47588C3.02315 5.84578 3.49406 5.308 4.06974 4.90763M21.7699 22.6078L8.64642 9.48431M4.06974 4.90763L8.64642 9.48431M7.57807 4.14854C8.01889 4.14257 8.51354 4.14257 9.07376 4.14257H16.7659C19.1592 4.14257 20.3559 4.14257 21.27 4.60834C22.0741 5.01805 22.7278 5.67179 23.1375 6.47588C23.6033 7.39001 23.6033 8.58668 23.6033 10.98V16.5354C23.6033 17.6001 23.6033 18.4279 23.5623 19.0995C23.5507 19.2894 23.5358 19.4669 23.5167 19.6336M6.50973 13.7577H8.64642" stroke="#2864A3" stroke-width="1.60252" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            </div>
+                            <div>
+                                <h2>Insufficient Funds</h2>
+                                <p>Failing to demonstrate enough financial resources to support your stay.</p>
+                            </div>
+                        </div>
+                        <div class="visa_rejection_fld">
+                            <div>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.46992 3.75781C2.27662 3.75781 2.11992 3.60111 2.11992 3.40781V2.85781C2.11992 2.36076 2.52287 1.95781 3.01992 1.95781H22.8199C23.317 1.95781 23.7199 2.36076 23.7199 2.85781V3.40781C23.7199 3.60111 23.5632 3.75781 23.3699 3.75781C22.9557 3.75781 22.6199 4.0936 22.6199 4.50781V21.0078C22.6199 21.422 22.9557 21.7578 23.3699 21.7578C23.5632 21.7578 23.7199 21.9145 23.7199 22.1078V22.6578C23.7199 23.1549 23.317 23.5578 22.8199 23.5578H3.01992C2.52287 23.5578 2.11992 23.1549 2.11992 22.6578V22.1078C2.11992 21.9145 2.27662 21.7578 2.46992 21.7578C2.88414 21.7578 3.21992 21.422 3.21992 21.0078V4.50781C3.21992 4.0936 2.88414 3.75781 2.46992 3.75781ZM6.31992 3.75781C5.60195 3.75781 5.01992 4.33984 5.01992 5.05781V20.4578C5.01992 21.1758 5.60195 21.7578 6.31992 21.7578C7.03789 21.7578 7.61992 21.1758 7.61992 20.4578V5.05781C7.61992 4.33984 7.03789 3.75781 6.31992 3.75781ZM15.1199 15.1578C15.8379 15.1578 16.4199 14.5758 16.4199 13.8578C16.4199 13.1398 15.8379 12.5578 15.1199 12.5578C14.402 12.5578 13.8199 13.1398 13.8199 13.8578C13.8199 14.5758 14.402 15.1578 15.1199 15.1578ZM16.4199 18.2578C16.4199 17.5398 15.8379 16.9578 15.1199 16.9578C14.402 16.9578 13.8199 17.5398 13.8199 18.2578V20.4578C13.8199 21.1758 14.402 21.7578 15.1199 21.7578C15.8379 21.7578 16.4199 21.1758 16.4199 20.4578V18.2578ZM13.8199 9.45781C13.8199 10.1758 14.402 10.7578 15.1199 10.7578C15.8379 10.7578 16.4199 10.1758 16.4199 9.45781V5.05781C16.4199 4.33984 15.8379 3.75781 15.1199 3.75781C14.402 3.75781 13.8199 4.33984 13.8199 5.05781V9.45781ZM12.0199 20.4578V10.5578V5.05781C12.0199 4.33984 11.4379 3.75781 10.7199 3.75781C10.002 3.75781 9.41992 4.33984 9.41992 5.05781V20.4578C9.41992 21.1758 10.002 21.7578 10.7199 21.7578C11.4379 21.7578 12.0199 21.1758 12.0199 20.4578ZM19.5199 21.7578C20.2379 21.7578 20.8199 21.1758 20.8199 20.4578V5.05781C20.8199 4.33984 20.2379 3.75781 19.5199 3.75781C18.802 3.75781 18.2199 4.33984 18.2199 5.05781V20.4578C18.2199 21.1758 18.802 21.7578 19.5199 21.7578Z" fill="#2864A3" stroke="white" stroke-width="0.4"></path></svg>
+                            </div>
+                            <div>
+                                <h2>Criminal Record</h2>
+                                <p>Having a criminal history that disqualifies you from obtaining a visa.</p>
+                            </div>
+                        </div>
+                        <div class="visa_rejection_fld">
+                            <div>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5195 13.7578V9.75781M13.0195 17.2578C13.0195 17.534 12.7957 17.7578 12.5195 17.7578C12.2434 17.7578 12.0195 17.534 12.0195 17.2578M13.0195 17.2578C13.0195 16.9817 12.7957 16.7578 12.5195 16.7578C12.2434 16.7578 12.0195 16.9817 12.0195 17.2578M13.0195 17.2578H12.0195M19.8506 10.849L19.4996 10.2222C17.2183 6.14845 16.0776 4.11158 14.5771 3.43406C13.269 2.84339 11.7701 2.84339 10.4619 3.43406C8.96142 4.11158 7.82077 6.14845 5.53948 10.2222L5.18847 10.849C2.99559 14.7649 1.89914 16.7228 2.08255 18.3261C2.24256 19.7249 2.98489 20.9914 4.12716 21.8144C5.43642 22.7578 7.68045 22.7578 12.1685 22.7578H12.8705C17.3586 22.7578 19.6026 22.7578 20.9119 21.8144C22.0542 20.9914 22.7965 19.7249 22.9565 18.3261C23.1399 16.7228 22.0435 14.7649 19.8506 10.849Z" stroke="#2864A3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            </div>
+                            <div>
+                                <h2>Previous Visa Violations</h2>
+                                <p>Having overstayed or violated the terms of a previous visa.</p>
+                            </div>
+                        </div>
+                        <div class="visa_rejection_fld">
+                            <div>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.4618 4.34607C10.9164 2.7251 13.1856 2.10803 15.2601 2.76935C17.3346 3.43067 18.8288 5.24751 19.0782 7.41166L19.2451 7.415C20.8681 7.47979 22.7234 8.49945 23.2489 11.3673L24.0988 17.9731C24.425 20.2674 24 22.0375 23.0117 23.2143C22.0233 24.3911 20.4025 24.9646 18.0701 24.9646H9.06647C7.224 25.1958 5.38819 24.4888 4.17613 23.0812C2.96408 21.6736 2.53673 19.7523 3.03772 17.9632L3.06229 17.8483C3.1792 17.4389 3.58336 17.1689 4.01616 17.2314C4.48831 17.2997 4.81575 17.738 4.74752 18.2104C4.43865 19.505 4.70931 20.87 5.48876 21.9485C6.44641 22.8568 7.74007 23.3229 9.05659 23.2341H18.0701C19.8589 23.2341 21.0943 22.8583 21.7367 22.077C22.3791 21.2958 22.6361 19.9905 22.3791 18.2104L21.5391 11.6738C21.2426 10.0916 20.3234 9.10268 19.0782 9.10268H8.0485C6.86252 9.10268 5.94338 10.0916 5.57771 11.743L5.34051 13.1967C5.23157 13.6409 4.79761 13.9249 4.34725 13.8468C3.89689 13.7686 3.58383 13.355 3.63072 12.9001L3.8778 11.4167C4.53009 8.40056 6.45731 7.41166 8.0485 7.41166H17.3189C17.1832 6.53532 16.7505 5.7323 16.0934 5.13719C14.532 3.73994 12.1345 3.87272 10.7367 5.43386V5.53275L10.6398 5.62232C10.4345 5.78507 10.1643 5.84816 9.90446 5.78847C9.60129 5.71883 9.35829 5.49265 9.26699 5.19513C9.17568 4.89761 9.24995 4.57395 9.4618 4.34607ZM16.9533 11.8914C17.0822 11.9212 17.2056 11.9713 17.3189 12.0397C17.42 12.1195 17.5098 12.2127 17.5858 12.3166C17.6287 12.3646 17.6592 12.4223 17.6747 12.4847C17.7048 12.5436 17.7249 12.6071 17.734 12.6726C17.7442 12.7381 17.7442 12.8049 17.734 12.8704C17.7374 13.0001 17.7103 13.1288 17.655 13.2462C17.6054 13.3736 17.5237 13.4861 17.4178 13.5725C17.2353 13.7588 16.9866 13.8655 16.726 13.8692C16.594 13.8639 16.4638 13.8372 16.3405 13.7901C16.1344 13.6675 15.9799 13.4742 15.9056 13.2462C15.8534 13.1281 15.8297 12.9994 15.8365 12.8704C15.8264 12.8048 15.8264 12.7382 15.8365 12.6726V12.4847L15.9353 12.3166C15.9634 12.259 16.0039 12.2084 16.0539 12.1683L16.2021 12.0397C16.2572 12.0023 16.3171 11.9724 16.38 11.9507C16.4395 11.9221 16.5027 11.9021 16.5678 11.8914C16.6946 11.8618 16.8265 11.8618 16.9533 11.8914ZM10.6379 11.9013C10.7034 11.9104 10.7668 11.9305 10.8257 11.9606C10.8864 11.9804 10.9432 12.0105 10.9937 12.0496C11.0529 12.0838 11.1063 12.1272 11.1518 12.1782C11.2018 12.2183 11.2423 12.2689 11.2704 12.3265C11.3088 12.3791 11.3419 12.4354 11.3693 12.4946L11.4286 12.6825C11.4339 12.7483 11.4339 12.8145 11.4286 12.8803C11.4286 13.4264 10.9861 13.8692 10.4402 13.8692C10.1864 13.8604 9.94579 13.7541 9.76818 13.5725C9.67466 13.4793 9.60073 13.3684 9.55075 13.2462C9.50349 13.1266 9.47999 12.999 9.48157 12.8704C9.47137 12.8049 9.47137 12.7381 9.48157 12.6726C9.49073 12.6071 9.51077 12.5436 9.54087 12.4847C9.56061 12.424 9.5907 12.3671 9.62982 12.3166C9.65795 12.259 9.69845 12.2084 9.74841 12.1683C9.79168 12.1216 9.84165 12.0816 9.89666 12.0496C9.94712 12.0105 10.004 11.9804 10.0647 11.9606C10.1235 11.9305 10.187 11.9104 10.2525 11.9013C10.3792 11.8717 10.5111 11.8717 10.6379 11.9013Z" fill="#2864A3"></path></svg>
+                            </div>
+                            <div>
+                                <h2>Invalid or Insufficient Travel Insurance</h2>
+                                <p>Failing to present valid or adequate travel insurance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visa_reviews">
+                    <h4 class="border-heading">Reviews</h4>
+                    
+                    <div class="visa_reviews_wrapper">
+                        <span>
+                        <div class="visa_reviews_point">
+                            <svg width="120" height="100" style="transform: scaleX(-1);" class="h-14 w-14 scale-x-[-1] lg:h-20 lg:w-20" viewBox="0 0 74 111" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.12667 96.8798C1.35306 96.9641 1.12268 96.8832 1.15848 96.8916C3.15475 97.3637 1.75662 97.6689 14.02 93.1016C25.2653 88.9147 34.7583 81.4309 41.4778 71.458C55.2578 51.0013 54.4534 24.9757 39.4184 5.15112C39.0649 4.6883 38.4067 4.59895 37.9412 4.9466C37.4784 5.30012 37.389 5.95832 37.7367 6.42382C52.2152 25.52 52.9982 50.5833 39.7239 70.2837C28.8036 86.488 7.16093 94.0129 1.70146 94.8588C0.900655 94.9827 0.563164 95.0386 0.412183 95.6008C0.273946 96.1288 0.62207 96.6918 1.12667 96.8798Z" fill="url(#paint0_linear_37513_113155)" stroke="white" stroke-width="0.288474"></path><path d="M47.0744 21.9515C54.1426 19.1383 56.2647 14.5558 53.0018 8.04083C52.8518 7.7451 52.6199 7.51231 52.349 7.36646C51.9332 7.13264 51.4183 7.09297 50.9485 7.3077C44.5961 10.1363 43.2688 15.7154 47.0744 21.9515Z" fill="#AABBC9" fill-opacity="0.795345" stroke="white" stroke-width="0.288474"></path><path d="M52.3478 7.36615C48.842 11.4089 47.4605 16.4517 47.0732 21.9512C54.1414 19.138 56.2635 14.5555 53.0006 8.04053C52.8512 7.74027 52.6232 7.51259 52.3478 7.36615Z" fill="#4B5565" stroke="white" stroke-width="0.288474"></path><path d="M47.0986 21.9086C45.446 14.4811 41.2636 11.6566 34.3104 13.836C33.9935 13.9372 33.7292 14.1282 33.5405 14.375C33.2435 14.7458 33.1224 15.25 33.26 15.7466C35.0416 22.4684 40.3363 24.6697 47.0986 21.9086Z" fill="#4B5565" stroke="white" stroke-width="0.288474"></path><path d="M33.5401 14.3755C36.9705 18.4824 41.7316 20.6462 47.0983 21.909C45.4457 14.4816 41.2633 11.657 34.3101 13.8364C33.9931 13.9376 33.7289 14.1286 33.5401 14.3755Z" fill="#E0ECF5" stroke="white" stroke-width="0.288474"></path><path d="M50.9402 41.8594C58.5292 41.3099 61.9313 37.5797 60.7867 30.3834C60.7342 30.0554 60.5847 29.7676 60.3657 29.5445C60.0422 29.197 59.5607 29.0028 59.0492 29.0634C52.1426 29.8492 49.1904 34.7694 50.9402 41.8594Z" fill="#FED382" stroke="white" stroke-width="0.288474"></path><path d="M60.365 29.5441C55.8018 32.3409 52.97 36.7316 50.9386 41.8634C58.5276 41.3139 61.9297 37.5837 60.7851 30.3874C60.7335 30.0549 60.584 29.7672 60.365 29.5441Z" fill="#FCBE6A" stroke="white" stroke-width="0.288474"></path><path d="M50.9755 41.8246C51.6414 34.2432 48.5024 30.2889 41.213 30.2764C40.8818 30.277 40.5712 30.3797 40.3145 30.559C39.9183 30.8257 39.6529 31.2689 39.6338 31.7824C39.3112 38.7271 43.6975 42.4253 50.9755 41.8246Z" fill="#FDB022" stroke="white" stroke-width="0.288474"></path><path d="M40.3206 30.5546C42.3558 35.5037 46.2382 39.003 50.9762 41.8237C51.642 34.2423 48.503 30.288 41.2136 30.2755C40.8825 30.2761 40.5719 30.3788 40.3206 30.5546Z" fill="#FCBE6A" stroke="white" stroke-width="0.288474"></path><path d="M45.633 60.925C52.8735 63.2665 57.4298 61.0876 59.0721 53.9859C59.144 53.662 59.1134 53.339 58.9979 53.0476C58.8271 52.6042 58.4556 52.2418 57.9592 52.1104C51.2623 50.2441 46.6805 53.6942 45.633 60.925Z" fill="#FED382" stroke="white" stroke-width="0.288474"></path><path d="M58.9976 53.0487C53.7184 53.926 49.4437 56.9306 45.6343 60.9217C52.8748 63.2633 57.4311 61.0843 59.0734 53.9826C59.1437 53.6631 59.1174 53.3416 58.9976 53.0487Z" fill="#FCBE6A" stroke="white" stroke-width="0.288474"></path><path d="M45.682 60.9049C49.1451 54.1309 47.7213 49.2861 40.9745 46.5343C40.6655 46.4095 40.3428 46.3867 40.0386 46.4584C39.573 46.5577 39.1566 46.8652 38.9467 47.3372C36.0353 53.6497 38.7073 58.7257 45.682 60.9049Z" fill="#FDB022" stroke="white" stroke-width="0.288474"></path><path d="M40.0375 46.4588C40.0605 51.8093 42.3498 56.5139 45.681 60.9053C49.1441 54.1313 47.7203 49.2865 40.9734 46.5347C40.6645 46.4099 40.3359 46.3898 40.0375 46.4588Z" fill="#FCBE6A" stroke="white" stroke-width="0.288474"></path><path d="M36.1644 76.4666C42.3808 80.8518 47.3788 80.1278 51.0561 73.8377C51.2221 73.5489 51.2909 73.2336 51.2656 72.9223C51.233 72.4476 50.989 71.9915 50.551 71.7163C44.7104 67.9435 39.3064 69.8749 36.1644 76.4666Z" fill="#FED382" stroke="white" stroke-width="0.288474"></path><path d="M51.2658 72.9219C45.9676 72.1901 40.9897 73.7884 36.1647 76.4662C42.381 80.8514 47.3791 80.1274 51.0564 73.8373C51.2224 73.5485 51.2927 73.229 51.2658 72.9219Z" fill="#FCBE6A" stroke="white" stroke-width="0.288474"></path><path d="M36.2154 76.4618C41.538 71.0232 41.6172 65.9737 35.9942 61.3421C35.7358 61.1338 35.4337 61.0165 35.1213 60.9926C34.6463 60.9471 34.158 61.1207 33.8197 61.506C29.161 66.666 30.209 72.3106 36.2154 76.4618Z" fill="#FDB022" stroke="white" stroke-width="0.288474"></path><path d="M35.1215 60.9921C33.5572 66.1068 34.3387 71.2773 36.2141 76.4656C41.5366 71.027 41.6158 65.9775 35.9928 61.3459C35.736 61.1334 35.4297 61.0144 35.1215 60.9921Z" fill="#FCBE6A" stroke="white" stroke-width="0.288474"></path><path d="M20.7783 89.1829C26.048 94.6714 31.092 94.9092 35.8991 89.4295C36.1185 89.1801 36.2445 88.8813 36.2769 88.572C36.3367 88.0976 36.1792 87.6055 35.8045 87.2517C30.7858 82.4361 25.1183 83.3101 20.7783 89.1829Z" fill="#FED382" stroke="white" stroke-width="0.288474"></path><path d="M36.2775 88.5715C31.2132 86.8457 26.0221 87.4735 20.7789 89.1823C26.0486 94.6708 31.0926 94.9086 35.8996 89.429C36.1191 89.1796 36.2451 88.8808 36.2775 88.5715Z" fill="#FCBE6A" stroke="white" stroke-width="0.288474"></path><path d="M20.8302 89.1875C27.0888 84.8572 28.1258 79.9162 23.4829 74.3008C23.2708 74.0465 22.9954 73.8708 22.6934 73.7925C22.2375 73.6567 21.7266 73.7342 21.3171 74.0492C15.761 78.2321 15.7186 83.9673 20.8302 89.1875Z" fill="#FDB022" stroke="white" stroke-width="0.288474"></path><path d="M22.6923 73.7933C20.1828 78.517 19.9705 83.7409 20.8274 89.1927C27.086 84.8624 28.1231 79.9214 23.4802 74.306C23.2654 74.0458 22.9926 73.876 22.6923 73.7933Z" fill="#FCBE6A" stroke="white" stroke-width="0.288474"></path><defs><linearGradient id="paint0_linear_37513_113155" x1="37.097" y1="4.11242" x2="-0.121846" y2="104.03" gradientUnits="userSpaceOnUse"><stop offset="0.0903261" stop-color="#E3E8EF"></stop><stop offset="0.247923" stop-color="#FED382"></stop></linearGradient></defs></svg>
+                            <h2 class="reviews__point">0</h2>
+                            <svg width="120" height="100" class="h-14 w-14 lg:h-20 lg:w-20" viewBox="0 0 74 111" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.12667 96.8798C1.35306 96.9641 1.12268 96.8832 1.15848 96.8916C3.15475 97.3637 1.75662 97.6689 14.02 93.1016C25.2653 88.9147 34.7583 81.4309 41.4778 71.458C55.2578 51.0013 54.4534 24.9757 39.4184 5.15112C39.0649 4.6883 38.4067 4.59895 37.9412 4.9466C37.4784 5.30012 37.389 5.95832 37.7367 6.42382C52.2152 25.52 52.9982 50.5833 39.7239 70.2837C28.8036 86.488 7.16093 94.0129 1.70146 94.8588C0.900655 94.9827 0.563164 95.0386 0.412183 95.6008C0.273946 96.1288 0.62207 96.6918 1.12667 96.8798Z" fill="url(#paint0_linear_37513_113155)" stroke="white" stroke-width="0.288474"></path><path d="M47.0744 21.9515C54.1426 19.1383 56.2647 14.5558 53.0018 8.04083C52.8518 7.7451 52.6199 7.51231 52.349 7.36646C51.9332 7.13264 51.4183 7.09297 50.9485 7.3077C44.5961 10.1363 43.2688 15.7154 47.0744 21.9515Z" fill="#AABBC9" fill-opacity="0.795345" stroke="white" stroke-width="0.288474"></path><path d="M52.3478 7.36615C48.842 11.4089 47.4605 16.4517 47.0732 21.9512C54.1414 19.138 56.2635 14.5555 53.0006 8.04053C52.8512 7.74027 52.6232 7.51259 52.3478 7.36615Z" fill="#4B5565" stroke="white" stroke-width="0.288474"></path><path d="M47.0986 21.9086C45.446 14.4811 41.2636 11.6566 34.3104 13.836C33.9935 13.9372 33.7292 14.1282 33.5405 14.375C33.2435 14.7458 33.1224 15.25 33.26 15.7466C35.0416 22.4684 40.3363 24.6697 47.0986 21.9086Z" fill="#4B5565" stroke="white" stroke-width="0.288474"></path><path d="M33.5401 14.3755C36.9705 18.4824 41.7316 20.6462 47.0983 21.909C45.4457 14.4816 41.2633 11.657 34.3101 13.8364C33.9931 13.9376 33.7289 14.1286 33.5401 14.3755Z" fill="#E0ECF5" stroke="white" stroke-width="0.288474"></path><path d="M50.9402 41.8594C58.5292 41.3099 61.9313 37.5797 60.7867 30.3834C60.7342 30.0554 60.5847 29.7676 60.3657 29.5445C60.0422 29.197 59.5607 29.0028 59.0492 29.0634C52.1426 29.8492 49.1904 34.7694 50.9402 41.8594Z" fill="#FED382" stroke="white" stroke-width="0.288474"></path><path d="M60.365 29.5441C55.8018 32.3409 52.97 36.7316 50.9386 41.8634C58.5276 41.3139 61.9297 37.5837 60.7851 30.3874C60.7335 30.0549 60.584 29.7672 60.365 29.5441Z" fill="#FCBE6A" stroke="white" stroke-width="0.288474"></path><path d="M50.9755 41.8246C51.6414 34.2432 48.5024 30.2889 41.213 30.2764C40.8818 30.277 40.5712 30.3797 40.3145 30.559C39.9183 30.8257 39.6529 31.2689 39.6338 31.7824C39.3112 38.7271 43.6975 42.4253 50.9755 41.8246Z" fill="#FDB022" stroke="white" stroke-width="0.288474"></path><path d="M40.3206 30.5546C42.3558 35.5037 46.2382 39.003 50.9762 41.8237C51.642 34.2423 48.503 30.288 41.2136 30.2755C40.8825 30.2761 40.5719 30.3788 40.3206 30.5546Z" fill="#FCBE6A" stroke="white" stroke-width="0.288474"></path><path d="M45.633 60.925C52.8735 63.2665 57.4298 61.0876 59.0721 53.9859C59.144 53.662 59.1134 53.339 58.9979 53.0476C58.8271 52.6042 58.4556 52.2418 57.9592 52.1104C51.2623 50.2441 46.6805 53.6942 45.633 60.925Z" fill="#FED382" stroke="white" stroke-width="0.288474"></path><path d="M58.9976 53.0487C53.7184 53.926 49.4437 56.9306 45.6343 60.9217C52.8748 63.2633 57.4311 61.0843 59.0734 53.9826C59.1437 53.6631 59.1174 53.3416 58.9976 53.0487Z" fill="#FCBE6A" stroke="white" stroke-width="0.288474"></path><path d="M45.682 60.9049C49.1451 54.1309 47.7213 49.2861 40.9745 46.5343C40.6655 46.4095 40.3428 46.3867 40.0386 46.4584C39.573 46.5577 39.1566 46.8652 38.9467 47.3372C36.0353 53.6497 38.7073 58.7257 45.682 60.9049Z" fill="#FDB022" stroke="white" stroke-width="0.288474"></path><path d="M40.0375 46.4588C40.0605 51.8093 42.3498 56.5139 45.681 60.9053C49.1441 54.1313 47.7203 49.2865 40.9734 46.5347C40.6645 46.4099 40.3359 46.3898 40.0375 46.4588Z" fill="#FCBE6A" stroke="white" stroke-width="0.288474"></path><path d="M36.1644 76.4666C42.3808 80.8518 47.3788 80.1278 51.0561 73.8377C51.2221 73.5489 51.2909 73.2336 51.2656 72.9223C51.233 72.4476 50.989 71.9915 50.551 71.7163C44.7104 67.9435 39.3064 69.8749 36.1644 76.4666Z" fill="#FED382" stroke="white" stroke-width="0.288474"></path><path d="M51.2658 72.9219C45.9676 72.1901 40.9897 73.7884 36.1647 76.4662C42.381 80.8514 47.3791 80.1274 51.0564 73.8373C51.2224 73.5485 51.2927 73.229 51.2658 72.9219Z" fill="#FCBE6A" stroke="white" stroke-width="0.288474"></path><path d="M36.2154 76.4618C41.538 71.0232 41.6172 65.9737 35.9942 61.3421C35.7358 61.1338 35.4337 61.0165 35.1213 60.9926C34.6463 60.9471 34.158 61.1207 33.8197 61.506C29.161 66.666 30.209 72.3106 36.2154 76.4618Z" fill="#FDB022" stroke="white" stroke-width="0.288474"></path><path d="M35.1215 60.9921C33.5572 66.1068 34.3387 71.2773 36.2141 76.4656C41.5366 71.027 41.6158 65.9775 35.9928 61.3459C35.736 61.1334 35.4297 61.0144 35.1215 60.9921Z" fill="#FCBE6A" stroke="white" stroke-width="0.288474"></path><path d="M20.7783 89.1829C26.048 94.6714 31.092 94.9092 35.8991 89.4295C36.1185 89.1801 36.2445 88.8813 36.2769 88.572C36.3367 88.0976 36.1792 87.6055 35.8045 87.2517C30.7858 82.4361 25.1183 83.3101 20.7783 89.1829Z" fill="#FED382" stroke="white" stroke-width="0.288474"></path><path d="M36.2775 88.5715C31.2132 86.8457 26.0221 87.4735 20.7789 89.1823C26.0486 94.6708 31.0926 94.9086 35.8996 89.429C36.1191 89.1796 36.2451 88.8808 36.2775 88.5715Z" fill="#FCBE6A" stroke="white" stroke-width="0.288474"></path><path d="M20.8302 89.1875C27.0888 84.8572 28.1258 79.9162 23.4829 74.3008C23.2708 74.0465 22.9954 73.8708 22.6934 73.7925C22.2375 73.6567 21.7266 73.7342 21.3171 74.0492C15.761 78.2321 15.7186 83.9673 20.8302 89.1875Z" fill="#FDB022" stroke="white" stroke-width="0.288474"></path><path d="M22.6923 73.7933C20.1828 78.517 19.9705 83.7409 20.8274 89.1927C27.086 84.8624 28.1231 79.9214 23.4802 74.306C23.2654 74.0458 22.9926 73.876 22.6923 73.7933Z" fill="#FCBE6A" stroke="white" stroke-width="0.288474"></path><defs><linearGradient id="paint0_linear_37513_113155" x1="37.097" y1="4.11242" x2="-0.121846" y2="104.03" gradientUnits="userSpaceOnUse"><stop offset="0.0903261" stop-color="#E3E8EF"></stop><stop offset="0.247923" stop-color="#FED382"></stop></linearGradient></defs></svg>
+                        </div>
+                        <p class="rating_rang">0 Reviews</p>
+                    </span>
+                        <div>
+                            <div class="d-flex gap-2">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.1977 6.02032C22.3027 6.09911 22.3912 6.19782 22.4581 6.31082C22.525 6.42382 22.569 6.54889 22.5876 6.6789C22.6062 6.8089 22.599 6.94128 22.5664 7.0685C22.5338 7.19571 22.4764 7.31526 22.3977 7.42032L16.3977 15.4203C16.2443 15.6249 16.0184 15.7629 15.7663 15.8061C15.5143 15.8492 15.2554 15.7942 15.0427 15.6523L9.82966 12.1773L4.39766 19.4203C4.31886 19.5254 4.22015 19.6139 4.10715 19.6808C3.99415 19.7477 3.86908 19.7917 3.73908 19.8103C3.60908 19.8288 3.47669 19.8216 3.34948 19.789C3.22226 19.7564 3.10271 19.6991 2.99766 19.6203C2.8926 19.5415 2.80409 19.4428 2.73718 19.3298C2.67027 19.2168 2.62628 19.0917 2.60771 18.9617C2.58914 18.8317 2.59635 18.6994 2.62894 18.5721C2.66153 18.4449 2.71886 18.3254 2.79766 18.2203L8.79766 10.2203C8.95104 10.0158 9.17695 9.87771 9.42897 9.83456C9.68098 9.79141 9.93995 9.84643 10.1527 9.98832L15.3657 13.4633L20.7977 6.22032C20.9568 6.00814 21.1937 5.86787 21.4562 5.83037C21.7188 5.79286 21.9855 5.86119 22.1977 6.02032Z" fill="black"></path></svg>
+                                <p>Avg rating of recent 10 travellers: <span style="color: rgb(18 183 106);">0.00 <br>  Stars</span></p>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.1977 6.02032C22.3027 6.09911 22.3912 6.19782 22.4581 6.31082C22.525 6.42382 22.569 6.54889 22.5876 6.6789C22.6062 6.8089 22.599 6.94128 22.5664 7.0685C22.5338 7.19571 22.4764 7.31526 22.3977 7.42032L16.3977 15.4203C16.2443 15.6249 16.0184 15.7629 15.7663 15.8061C15.5143 15.8492 15.2554 15.7942 15.0427 15.6523L9.82966 12.1773L4.39766 19.4203C4.31886 19.5254 4.22015 19.6139 4.10715 19.6808C3.99415 19.7477 3.86908 19.7917 3.73908 19.8103C3.60908 19.8288 3.47669 19.8216 3.34948 19.789C3.22226 19.7564 3.10271 19.6991 2.99766 19.6203C2.8926 19.5415 2.80409 19.4428 2.73718 19.3298C2.67027 19.2168 2.62628 19.0917 2.60771 18.9617C2.58914 18.8317 2.59635 18.6994 2.62894 18.5721C2.66153 18.4449 2.71886 18.3254 2.79766 18.2203L8.79766 10.2203C8.95104 10.0158 9.17695 9.87771 9.42897 9.83456C9.68098 9.79141 9.93995 9.84643 10.1527 9.98832L15.3657 13.4633L20.7977 6.22032C20.9568 6.00814 21.1937 5.86787 21.4562 5.83037C21.7188 5.79286 21.9855 5.86119 22.1977 6.02032Z" fill="black"></path></svg>
+                                <p>Most common traveller type:</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                
+                    <div class="position-relative search_smart__main">
+                        <input class="search_smart" type="search" placeholder="Smart AI; Ask me anything...">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <h5 class="mt-5" style="margin-bottom: 20px;">Common Keywords</h5>
+                    <div class="keywords">
+                      <div class="keyword">
+                        <div class="keyword-icon">✓</div> Quick Decision
+                      </div>
+                      <div class="keyword">
+                        <div class="keyword-icon">✓</div> Easy Application
+                      </div>
+                      <div class="keyword">
+                        <div class="keyword-icon">✓</div> Customer Support
+                      </div>
+                      <div class="keyword">
+                        <div class="keyword-icon">✓</div> Documentation
+                      </div>
+                      <div class="keyword">
+                        <div class="keyword-icon">✓</div> On Time
+                      </div>
+                    </div>
+
+<div class="filters">
+    <label class="text-black">Sort by</label>
+    <div class="filter-select">
+      <div class="filter-button" onclick="toggleDropdown(this)">Most Recent</div>
+      <div class="filter-menu">
+        <div class="filter-option" onclick="selectOption(this)">
+          <div class="circle-icon active">✓</div> Most Recent
+        </div>
+        <div class="filter-option" onclick="selectOption(this)">
+          <div class="circle-icon"></div> Oldest
+        </div>
+      </div>
+    </div>
+  
+    <label>Type</label>
+    <div class="filter-select">
+      <div class="filter-button" onclick="toggleDropdown(this)">Frequent Traveller</div>
+      <div class="filter-menu">
+        <div class="filter-option" onclick="selectOption(this)">
+          <div class="circle-icon active">✓</div> Frequent Traveller
+        </div>
+        <div class="filter-option" onclick="selectOption(this)">
+          <div class="circle-icon"></div> Solo
+        </div>
+        <div class="filter-option" onclick="selectOption(this)">
+          <div class="circle-icon"></div> Family
+        </div>
+      </div>
+    </div>
+  
+    <label>Group Size</label>
+    <div class="filter-select">
+      <div class="filter-button" onclick="toggleDropdown(this)">All</div>
+      <div class="filter-menu">
+        <div class="filter-option" onclick="selectOption(this)">
+          <div class="circle-icon active">✓</div> All
+        </div>
+        <div class="filter-option" onclick="selectOption(this)">
+          <div class="circle-icon"></div> Solo
+        </div>
+        <div class="filter-option" onclick="selectOption(this)">
+          <div class="circle-icon"></div> Family
+        </div>
+        <div class="filter-option" onclick="selectOption(this)">
+          <div class="circle-icon"></div> Group
+        </div>
+        <div class="filter-option" onclick="selectOption(this)">
+          <div class="circle-icon"></div> Couple
+        </div>
+      </div>
+    </div>
+  </div>
+
+<button class="see-more">See More Reviews</button>
+
+<hr>
+
+
+                </div>
+                <div class="frequently_ask_qus">
+                    <h4 class="border-heading">Frequently Asked Questions</h4>
+                    <div class="frequently_ask_qus_wrapper">
+                        <div class="position-relative search_smart__main mt-5">
+                            <input class="search_smart" type="search" placeholder="Smart AI; Ask me anything...">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <div>
+                            <a class="general_info_btn" href="#">General Information</a>
+                        </div>
+                        <h2 class="mb-4">General Information</h2>
+                          <ul>
+                            <li>
+                              <details>
+                                <summary>
+                                  <h3>Do Pakistani Citizens need a visa for Croatia?</h3>
+                                </summary>
+                                <details-content>
+                                  <p>
+                                    Yes, Croatia citizens must have a valid visa to visit Croatia. They can apply for a Schengen visa, which allows short stays for tourism, business or family visits.
+                                  </p>
+                                </details-content>
+                              </details>
+                            </li>
+                            <li>
+                              <details>
+                                <summary>
+                                  <h3>What is a Schengen visa?</h3>
+                                </summary>
+                                <details-content>
+                                  <p>
+                                    A <strong>Schengen visa</strong>  allows individuals to enter, transit through, or stay within the Schengen Area, comprising the following <strong>29 European countries: </strong> 
+                                  </p>
+                                  <p>Austria, Belgium, Bulgaria, Croatia, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, and Switzerland.</p>
+                                </details-content>
+                              </details>
+                            </li>
+                            <li>
+                              <details>
+                                <summary>
+                                  <h3>What are the Croatia visa requirements for Pakistani Citizens?</h3>
+                                </summary>
+                                <details-content>
+                                  <p>
+                                    To apply for a Croatia visa from Croatia, the following documents are required:
+                                  </p>
+                                  <ul>
+                                    <li>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg>
+                                      Completed and signed Croatia <strong>visa application form.</strong> </li>
+                                    <li>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg>
+                                      One recent passport-sized <strong>photograph</strong> per the visa photo requirements. </li>
+                                    <li>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg>
+                                      A <strong>passport</strong> with at least two blank pages, valid for at least 3 months beyond your planned departure from the Schengen Area and issued within the last 10 years.</li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><strong>Previous passports,</strong> if available. </li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><a style="text-decoration: underline;" href="#">Cover letter </a><strong>outlining your personal information, purpose of visit, financial means and intent to return.</strong>  </li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><strong>A letter of introduction from the employer with a ‘No Objection Statement’ regarding your planned trip to Croatia.</strong> </li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><strong>Travel insurance</strong> with at least €30,000 coverage and valid for all Schengen countries. </li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><strong>Roundtrip tickets</strong> and proof of intra-Schengen travel (if applicable).</li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><strong>Hotel reservations</strong> or invitation letter, if invited. </li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><strong>Proof of sufficient financial means</strong> (bank account statements and pay slips for the last 3 months and tax records, if available). </li>
+                                  </ul>
+                                  <p>Note: Depending on the specific circumstances mentioned in the visa application, additional documents will be required.</p>
+                                  
+                                </details-content>
+                              </details>
+                            </li>
+                            <li>
+                              <details>
+                                <summary>
+                                  <h3>How do I apply for a Croatia visa?</h3>
+                                </summary>
+                                <details-content>
+                                  <p>
+                                    Here’s how you can apply for a Croatia:
+                                  </p>
+                                  <div>
+                                    <p><strong>Step 1: </strong> Gather the required documents and ensure that each document is up-to-date. </p>
+                                    <p><strong>Step 2: </strong> Complete the Croatia visa application form and retain a copy to submit during the appointment. </p>
+                                    <p><strong>Step 3: </strong> Visit the Croatia visa application centre (VAC)’s official website to book an appointment at the nearest centre.</p>
+                                    <p><strong>Step 4: </strong> Attend your visa appointment and submit your biometrics, supporting documents and the fee. </p>
+                                    <p><strong>Step 5: </strong> After submission, you can also track your visa application status online on the VAC’s website.</p>
+                                    <p><strong>Step 6: </strong> Once your visa is approved, collect your passport with the visa sticker from the VAC.</p>
+                                  </div>
+                                </details-content>
+                              </details>
+                            </li>
+                            <li>
+                              <details>
+                                <summary>
+                                  <h3>How much does a Croatia visa cost for Pakistani Citizens?</h3>
+                                </summary>
+                                <details-content>
+                                  <p>
+                                    The fees for a Croatia Schengen visa are as follows:
+                                  </p>
+                                  <ul>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><strong>Adults:</strong>  €90;. </li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><strong>Children (6-12 years):</strong>  €45; </li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><strong>Children below 6:</strong>  Free. </li>                                   
+                                  </ul>
+                                  <p><strong>Tip: </strong> Keep the exact visa fee ready in cash (in your local currency) during your appointment, as payment methods can vary depending on the visa application centre.</p>
+                                </details-content>
+                              </details>
+                            </li>
+                            <li>
+                              <details>
+                                <summary>
+                                  <h3>What is the Croatia visa processing time for Pakistani Citizens?</h3>
+                                </summary>
+                                <details-content>
+                                  <p>
+                                    The Croatia visa processing usually takes up to 15 working days but may take longer due to additional interviews, document requests, or high application volumes during peak travel seasons.
+                                  </p>
+                                </details-content>
+                              </details>
+                            </li>
+                            <li>
+                              <details>
+                                <summary>
+                                  <h3>What documents are required for minors applying for a Croatia visa?</h3>
+                                </summary>
+                                <details-content>
+                                  <p>
+                                    Minors applying for a Croatia visa must provide the following additional documents:
+                                  </p>
+                                  <ul>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg>A<strong> consent letter,</strong>  signed by both parents or legal guardians. </li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><strong>Original passports</strong>  of both the parents or legal guardians, along with copies. </li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg>If applicable, valid<strong>Schengen visas</strong>    for both parents or legal guardians. </li>                                   
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg>  The birth certificate of the minor. </li>                                   
+                                  </ul>
+                                  <p><strong>Proof of custody,</strong> if applicable.</p>
+                                </details-content>
+                              </details>
+                            </li>
+                            <li>
+                              <details>
+                                <summary>
+                                  <h3>Can Pakistani Citizens travel to other Schengen countries with a Croatia visa?</h3>
+                                </summary>
+                                <details-content>
+                                  <p>
+                                   <strong>Yes,</strong>  Croatia is part of the Schengen Area; hence, you can travel freely to other Schengen countries with a Croatia visa.
+                                  </p>
+                                </details-content>
+                              </details>
+                            </li>
+                            <li>
+                              <details>
+                                <summary>
+                                  <h3>Is an interview mandatory when applying for a Croatia Schengen visa?</h3>
+                                </summary>
+                                <details-content>
+                                  <p>
+                                   <strong>No,</strong> a consular interview is typically not mandatory to get a visa to Croatia. However, it may be requested in special circumstances (such as discrepancies in your application).
+                                  </p>
+                                </details-content>
+                              </details>
+                            </li>
+                            <li>
+                              <details>
+                                <summary>
+                                  <h3>Is travel insurance mandatory for Pakistani Citizens to get a Croatia visa?</h3>
+                                </summary>
+                                <details-content>
+                                  <p>
+                                   <strong>Yes,</strong> travel insurance (with at least €30,000.00 coverage) is mandatory when applying for a Croatia tourist visa from Croatia.
+                                  </p>
+                                </details-content>
+                              </details>
+                            </li>
+                            <li>
+                              <details>
+                                <summary>
+                                  <h3>What financial documents can I provide to prove sufficient funds when applying for a Croatia visa?</h3>
+                                </summary>
+                                <details-content>
+                                  <p>
+                                    Here is a list of documents you can submit when applying for a Croatia visa from Pakistani Citizens: 
+                                  </p>
+                                  <ul>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><strong> Bank statements</strong> showing sufficient funds for your planned expenses. </li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg>Recent<strong>payslips </strong> showing your current income, employer's name, position, and monthly salary. </li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><strong>Business registration documents,</strong> if self-employed, to demonstrate income and financial stability. </li>                                   
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><strong>Property deeds</strong> to show ownership and financial stability (especially useful for housewives).  </li>                                   
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg>If retired, provide<strong>pension statements</strong> to prove a reliable income source. </li>                                   
+                                  </ul>
+                                  <p>If unemployed or unable to provide sufficient funds, a <strong>sponsorship letter</strong>  from a family member or friend, including their proof of financial means.</p>
+                                </details-content>
+                              </details>
+                            </li>
+                            <li>
+                              <details>
+                                <summary>
+                                  <h3>How can I show strong ties to Croatia when applying for a Croatia visa?</h3>
+                                </summary>
+                                <details-content>
+                                  <p>
+                                    To convince the consular officer that you will return to Croatia after your Croatia trip, you can provide the following documents:
+                                  </p>
+                                  <ul>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><strong>Letter of employment</strong> from your employer confirming your position, salary, and approved leave. </li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><strong>Property deeds  </strong> or ownership papers showing financial investments in Croatia. </li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><strong>Marriage or birth certificates</strong>  of dependent children to show family ties. </li>                                   
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><strong>Business ownership documents</strong> or partnership agreements if self-employed.  </li>                                   
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none"><path d="M7.50417 3.50607C8.18004 3.88915 8.18004 4.86293 7.50417 5.24601L2.28216 8.20584C1.61552 8.58368 0.789062 8.10213 0.789062 7.33586L0.789062 1.41621C0.789062 0.649941 1.61553 0.168393 2.28216 0.54624L7.50417 3.50607Z" fill="#2864A3"></path></svg><strong>Letter from your school</strong>  confirming enrollment and return date, if available. </li>                                   
+                                  </ul>
+                                  <p>If unemployed or unable to provide sufficient funds, a <strong>sponsorship letter</strong>  from a family member or friend, including their proof of financial means.</p>
+                                </details-content>
+                              </details>
+                            </li>
+                            <li>
+                              <details>
+                                <summary>
+                                  <h3>What can I do if my Croatia visa application is rejected?</h3>
+                                </summary>
+                                <details-content>
+                                  <p>
+                                    If your Croatia tourist visa application is rejected, you can either reapply after addressing the reasons for rejection or appeal the decision within the timeline communicated in the visa refusal letter.
+                                  </p>
+                                </details-content>
+                              </details>
+                            </li>
+                            <li>
+                              <details>
+                                <summary>
+                                  <h3>Can Pakistani Citizens work or study on a Croatia tourist visa?</h3>
+                                </summary>
+                                <details-content>
+                                  <p>
+                                   <strong>No,</strong>  a Croatia tourist visa does not permit you to work or study in Croatia or the Schengen Area.
+                                  </p>
+                                </details-content>
+                              </details>
+                            </li>
+                          </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+      
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Contact Info</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                                <a class="btn mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Opening Time</h4>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Mon - Friday:</h6>
+                                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Satday:</h6>
+                                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Vacation:</h6>
+                                <p class="text-white mb-0">All Sunday is our vacation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Our Services</h4>
+                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Business</a>
+                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Evaluation</a>
+                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Migrate</a>
+                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Study</a>
+                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Counselling</a>
+                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Work / Career</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-secondary mb-4">Newsletter</h4>
+                            <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="position-relative mx-auto rounded-pill">
+                                <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-4 text-center text-md-start mb-md-0">
+                        <span class="text-white"> © Copyright 2025</span>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end text-white">
+        
+                        All Rights Reserved by EASYGO VISA</a>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end text-white ">
+        
+                        <a class="text-center text-md-end text-white" href="./terms-conditions.html">Terms and Conditions</a>
+                        <a class="text-center text-md-end text-white" style="padding-left: 10px;" href="./privacy-policy.html">Privacy Policy</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+    <script>
+        // Initialize popovers manually
+        var typeLinks = document.querySelectorAll('.type-link');
+        
+        typeLinks.forEach(function(link) {
+          var popover = new bootstrap.Popover(link, {
+            trigger: 'manual',
+            html: true,
+            placement: 'bottom',
+            title: '<strong>' + link.getAttribute('data-bs-title') + '</strong>',
+            content: link.getAttribute('data-bs-content')
+          });
+        
+          link.addEventListener('mouseenter', function () {
+            popover.show();
+          });
+        
+          link.addEventListener('mouseleave', function () {
+            setTimeout(function () {
+              if (!link.matches(':hover') && !document.querySelector('.popover:hover')) {
+                popover.hide();
+              }
+            }, 100);
+          });
+        
+          document.addEventListener('mouseenter', function (e) {
+            if (e.target.closest('.popover')) {
+              e.target.closest('.popover').addEventListener('mouseleave', function () {
+                setTimeout(function () {
+                  if (!link.matches(':hover') && !document.querySelector('.popover:hover')) {
+                    popover.hide();
+                  }
+                }, 100);
+              });
+            }
+          }, true);
+        });
+        </script>
+        <script>
+            const timeline = document.getElementById('timeline');
+            const timelineLineFill = document.getElementById('timeline-line-fill');
+            const steps = document.querySelectorAll('.timeline-step');
+            
+            window.addEventListener('scroll', () => {
+              const timelineTop = timeline.getBoundingClientRect().top + window.scrollY;
+              const timelineHeight = timeline.offsetHeight;
+              const scrollPosition = window.scrollY + window.innerHeight;
+            
+              let progress = (scrollPosition - timelineTop) / timelineHeight;
+              progress = Math.min(Math.max(progress, 0), 1); // clamp between 0 and 1
+            
+              timelineLineFill.style.height = `${progress * 100}%`;
+            
+              steps.forEach(step => {
+                const stepTop = step.getBoundingClientRect().top + window.scrollY;
+                if (scrollPosition > stepTop + 50) {
+                  step.classList.add('active');
+                } else {
+                  step.classList.remove('active');
+                }
+              });
+            });
+            </script>
+            
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        function toggleDropdown(button) {
+          const menu = button.nextElementSibling;
+          document.querySelectorAll('.filter-menu').forEach(m => {
+            if (m !== menu) m.classList.remove('open');
+          });
+          menu.classList.toggle('open');
+        }
+      
+        function selectOption(option) {
+          const menu = option.parentElement;
+          const button = menu.previousElementSibling;
+      
+          // Remove active from all options
+          menu.querySelectorAll('.circle-icon').forEach(icon => {
+            icon.classList.remove('active');
+            icon.textContent = '';
+          });
+      
+          // Activate selected option
+          const circle = option.querySelector('.circle-icon');
+          circle.classList.add('active');
+          circle.textContent = '✓';
+      
+          // Update button text
+          button.innerHTML = option.innerText.trim();
+      
+          // Close dropdown
+          menu.classList.remove('open');
+        }
+      
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.filter-select')) {
+            document.querySelectorAll('.filter-menu').forEach(m => m.classList.remove('open'));
+          }
+        });
+      </script>
+      <script>
+        
+// define the custom element
+    class CircleExpand extends HTMLElement {
+      constructor() {
+        super()
+        this.innerHTML =
+          `
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path d="M7 14H21" stroke="var(--font-color)" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M14 14V7" stroke="var(--font-color)" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M14 14V21" stroke="var(--font-color)" stroke-width="1.5" stroke-linecap="round" />
+          <circle cx="14" cy="14" r="12.75" stroke="var(--font-color)" stroke-width="1.5" />
+        </svg>
+        `;
+      }
+
+      connectedCallback() {
+        const circle = this.querySelector('svg circle');
+        const top = this.querySelector('svg path:nth-of-type(2)');
+        const bottom = this.querySelector('svg path:nth-of-type(3)');
+
+        const circle_length = this.pathLength(circle);
+        const top_length = this.pathLength(top);
+        const bottom_length = this.pathLength(bottom);
+
+        circle.style.setProperty('--circle-length', circle_length + 0.5);
+        top.style.setProperty('--top-length', top_length);
+        bottom.style.setProperty('--bottom-length', bottom_length);
+      }
+
+      pathLength(element) {
+        return element.getTotalLength();
+      }
+    }
+
+    customElements.define('circle-expand', CircleExpand);
+
+    const summary = document.querySelectorAll('summary');
+
+    for (let i = 0; i < summary.length; i++) {
+      summary[i].innerHTML += '<circle-expand></circle-expand>';
+    }
+
+    // details element
+    const details_element = document.querySelectorAll('details');
+
+    for (let i = 0; i < details_element.length; i++) {
+      details_element[i].isTransitioning = false;
+
+      const summary_elememnt = details_element[i].querySelector('summary');
+      const content_element = details_element[i].querySelector('details-content');
+
+      summary_elememnt.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        if (details_element[i].isTransitioning) {
+          return;
+        }
+
+        details_element[i].isTransitioning = true;
+
+        if (details_element[i].hasAttribute('open')) {
+          content_element.style.height = '0';
+          content_element.style.paddingBlockStart = '0';
+          summary_elememnt.toggleAttribute('expanded');
+
+          content_element.addEventListener('transitionend', function handleClose() {
+            details_element[i].removeAttribute('open');
+            details_element[i].isTransitioning = false;
+            content_element.removeEventListener('transitionend', handleClose);
+          });
+        } else {
+          details_element[i].setAttribute('open', '');
+          summary_elememnt.toggleAttribute('expanded');
+
+          content_element.style.height = content_element.scrollHeight + 'px';
+
+          content_element.addEventListener('transitionend', function handleOpen() {
+            content_element.style.height = 'none';
+            details_element[i].isTransitioning = false;
+            content_element.removeEventListener('transition', handleOpen);
+          });
+        }
+      });
+    }
+  
+      </script>
+      
+      </body>
+    </body>
+
+</html>
